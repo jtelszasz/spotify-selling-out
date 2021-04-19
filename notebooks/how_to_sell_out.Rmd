@@ -64,8 +64,8 @@ library(DT)
 # Here is my first notebook
 
 ```{r}
-track_features <- read_csv("../data/data/track_features/tf_mini.csv")
-skips <- read_csv("../data/data/training_set/log_mini.csv")
+track_features <- read_csv("../data/raw/track_features/tf_mini.csv")
+skips <- read_csv("../data/raw/training_set/log_mini.csv")
 ```
 
 
@@ -124,7 +124,7 @@ track_plays_skips_features %>%
 
 
 ```{r}
-
+write_csv(track_plays_skips_features, "data/track_level_data.csv")
 ```
 
 

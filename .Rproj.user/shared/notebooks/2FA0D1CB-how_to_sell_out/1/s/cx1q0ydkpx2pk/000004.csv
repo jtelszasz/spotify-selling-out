@@ -1,2 +1,5 @@
 "0","track_plays_skips_features <- track_plays_and_skips %>% "
 "0","  left_join(track_features, by = c(""track_id_clean"" = ""track_id"")) "
+"2","Error in left_join(., track_features, by = c(track_id_clean = ""track_id"")) : 
+  object 'track_plays_and_skips' not found
+"
